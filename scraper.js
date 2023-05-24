@@ -217,33 +217,3 @@ export const getBestPlaceToWork = async (year) => {
         )
     )
 }
-
-
-// for (let i = 1; i < 2; i++) {
-//     try {
-//         await page.goto(createReviewUrl('https://www.glassdoor.com/Reviews/Target-Reviews-E194.htm', i), {waitUntil:"domcontentloaded"});
-//         await page.reload();
-//     } catch (error) {
-//         if (error instanceof errors.TimeoutError) {
-//             console.log(error.message)
-//         }
-//     }
-//     const reviews = await getAllReviews(i);
-//     console.log(await getShortReview(reviews));
-// }
-
-
-// try {
-//     await page.goto(`https://www.glassdoor.com/Overview/Working-at-Target-EI_IE194.11,17.htm`, {timeout: 0});
-// } catch (error) {
-//     if (error instanceof errors.TimeoutError) {
-//         console.log(error.message)
-//     }
-// }
-// const result = await getOverview();
-// const data = await getAwardDetailRange(2019);
-// const items = await getBestPlaceToWorkItems(data);
-
-// console.log(await getBestPlaceToWork(items));
-
-// await browser.close();
